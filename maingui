@@ -28,3 +28,5 @@ Tab:AddButton({
 
 -- Initialize OrionLib
 OrionLib:Init()
+
+print ("new")
