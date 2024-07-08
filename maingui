@@ -1,0 +1,29 @@
+-- Load OrionLib
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+
+-- Create the main window
+local Window = OrionLib:MakeWindow({
+    Name = "My OrionLib Script",
+    HidePremium = false,
+    SaveConfig = true,
+    ConfigFolder = "OrionTest"
+})
+
+-- Create a new tab
+local Tab = Window:MakeTab({
+    Name = "Combat",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
+-- Add a button to the tab
+Tab:AddButton({
+    Name = "Fly",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/HankRBXHelper/Fly-Script/main/%5BFE%5D%20Fly%20%5BPress%20E%5D.txt"))()
+        print("Flight clicked!")
+    end
+})
+
+-- Initialize OrionLib
+OrionLib:Init()
