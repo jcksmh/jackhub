@@ -1,3 +1,4 @@
+print ("hello world")
 -- Load OrionLib
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 
